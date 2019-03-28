@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="xxx.css">
+    <script src="xxxx.js"></script>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        
+        body{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            margin: 0;
+            grid-gap: 0;
+        }
+        
+        header{
+            background-color: ;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            
+        }
+        
+        .menu{
+            display: none;
+        }
+        
+        .hidden{
+            display: none;
+        }
+        
+        header ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        header li{
+            list-style: none;
+            font-family: 'Comfortaa', cursive;
+            padding-left: 15px;
+            padding-right: 20px;
+            padding-top: 7px;
+        }
+        
+        .ok{
+            font-family: 'Righteous', cursive;
+            font-size: 22px;
+            margin-right: auto;
+        }
+        
+        .li-right{
+            padding-top: 13px;
+        }
+        
+        .li-right:hover{
+            border-bottom: gray;
+        }
+        
+        
+        
+        .photo-area{
+            background-color:aquamarine;
+            grid-column: 1/2;
+            grid-row: 2/4;
+            background-image: url(100pic1.jpg);
+            height: 440px;
+            background-size:cover;
+            background-position: center;
+            margin-top: -145px;
+            opacity: 0.8;
+            text-align: center;
+
+            animation: iro 6s linear infinite;
+        }
+        
+        
+        @keyframes iro{
+            from{background-position: 0 0;}
+            to{background-position: -990px -600px;}
+        }
+        
+        
+        .photo-area p{
+            font-family: 'Allerta Stencil', sans-serif;
+            font-size: 30px;
+            color:black;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .photo-area button{
+            padding:13px 37px 13px 37px;
+            font-family: 'Baloo', cursive;
+            font-size: 22px;
+            color: black;
+            border-radius: 50px;
+            background-color:transparent;
+            border: solid 2px black;
+        }
+        
+        .photo-area button:hover{
+            cursor: pointer;
+            background-color: black;
+            color:azure;
+            transition: 1.0s;
+            
+        }
+        
+        .main{
+            background-color:;
+            grid-column: 1/2;
+            grid-row: 4/7;
+            margin-top: -110px;
+        }
+        
+        .life-p{
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size: 38px;
+
+            color: black;
+            text-align: center;
+            padding-top: 60px;
+            border-bottom: solid 1px gray;
+        }
+        
+        .life-pp{
+            font-size: 22px;
+            font-family: 'Nanum Gothic Coding', monospace;
+            text-align: center;
+        }
+        
+        
+        .life{
+            width: 260px;
+            margin: 0 auto;
+        }
+        
+        .box{
+            padding-top: 70px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .box img{
+            max-width: 330px;
+            max-height: inherit;
+        }
+        
+    
+        
+        
+        .box p{
+            font-family: 'Forum', cursive;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .btn{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+        
+        .btn button{
+            padding: 12px 34px;
+            font-family: 'Jaldi', sans-serif;
+            letter-spacing: 0.3em;
+            background-color: transparent;
+            transition: 0.3s;
+            border: solid 1px gray;
+            color: gray;
+            font-size: 16px;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .btn button:hover{
+            opacity: 0.6;
+            color: white;
+            background-color: gray;
+            cursor: pointer;
+        }
+        
+        footer{
+            padding-top: 30px;
+            background-color:#222222;
+            grid-column: 1/2;
+            grid-row: 7/8;
+            color:dimgrey;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content:space-around;
+            margin-bottom: -195px;
+            margin-top: 10px;
+        }
+        
+        .f4 i{
+            padding-right: 4px;
+            padding-left: 2px;
+            font-size: 22px;
+        }
+        
+        
+        
+        
+        
+        
+        @media(max-width:685px){
+            header{
+                display: none;
+            }
+            
+            .menu{
+                display: flex;
+                justify-content:center;
+                font-size:12px;
+                padding-bottom: 30px;
+            }
+            
+            .menu i{
+                font-size: 22px;
+            }
+            
+            .ok{
+                padding-top: 10px;
+            }
+            
+            .hidden{
+                display:none;
+                
+            }
+            
+            .hidden ul{
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+            
+            .hidden li{
+                list-style: none;
+                padding-right: 1px;
+            }
+            
+            .hidden i{
+                color: gray;
+                font-size: 20px;
+            }
+            
+            .li-right a:hover{
+            cursor: pointer;
+            
+        }
+            
+            .box{
+            padding-top: 70px;
+            display: flex;
+            flex-direction:column;
+            text-align: center;    
+        }
+            
+            .box-top{
+                padding-bottom: 30px;
+            }
+        
+            .photo-area{
+            background-color:aquamarine;
+            grid-column: 1/2;
+            grid-row: 2/4;
+            background-image: url(100pic1.jpg);
+            height: 440px;
+            background-size:cover;
+            background-position: center;
+            margin-top: -235px;
+            opacity: 0.8;
+            text-align: center;
+
+            animation: iro 6s linear infinite;
+        }
+         
+            .main{
+            background-color:;
+            grid-column: 1/2;
+            grid-row: 4/7;
+            margin-top: -310px;
+        }
+        
+            
+            footer{
+                padding-top: 50px;
+                padding-bottom: 10px;
+            background-color:#222222;
+            grid-column: 1/2;
+            grid-row: 7/8;
+            color:dimgrey;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            text-align: center; 
+                margin-top: -20px;
+            margin-bottom: -270px;
+        }
+            
+            .f1,f2, f3, f4{
+                padding-bottom: 22px;
+            }
+            
+        }
+        
+        
+        @media(min-width:685px){
+            .li-right a:hover{
+            cursor: pointer;
+            border-bottom: solid 2px gray;
+            
+        }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+      <ul>
+        <li class="ok">GAYMER</li>
+        <li class="li-right"><a>Home</a></li>
+        <li class="li-right"><a>Products</a></li>  
+        <li class="li-right"><a>Support</a></li>    
+      </ul>         
+    
+  </header>
+    
+    
+    <header class="menu">
+      <ul>
+        <li class="li-right"><a><i class="fas fa-bars">
+        </i></a></li>
+          <li class="ok">GAYMER</li>
+      </ul>         
+    
+        <div class="hidden">
+      <ul>           
+        <li class="li-right"><a><i class="fas fa-home"></i></a></li>
+        <li class="li-right"><a><i class="fab fa-product-hunt"></i></a></li>  
+        <li class="li-right"><a><i class="fas fa-question-circle"></i></a></li> 
+      </ul> 
+    </div>  
+        
+  </header>
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+   
+  <div class="photo-area">
+      <p>Game.online</p>
+      <p>Monthly Price start from</p>
+      <p>$29</p>
+      <button>Free Try</button>
+  </div>  
+    
+    
+  <div class="main">
+      <div class="life">
+      <p class="life-p">Fit Your Life</p>
+      </div>
+      
+       <p class="life-pp">Finding the right fit is important!</p>  
+      
+      <div class="box">
+         <div class="box-top">
+          <img src="100aa.jpg">
+          <p>Select your place</p> 
+          <p>Where to shop in Auckland</p>    
+          </div>  
+          
+          <div class="box-bottom">
+           <img src="100bb.jpg">
+            <p>About Us</p>  
+          </div>
+      </div>
+      
+      <div class="btn">
+         <button>MORE <i class="fas fa-chevron-right"></i></button>
+      </div>
+      
+      
+  </div>   
+    
+  
+  <footer>
+     <div class="f1">
+      <p>Company</p>
+      <p>Recruit</p>     
+      <p>Location</p>
+      <p>Report</p>     
+      </div>
+      
+      <div class="f2">
+        <p>FAQ</p>
+        <p>Privacy Policy</p>  
+      </div>
+      
+      <div class="f3">
+         <p>TEL: 021-8900-2089</p>
+          <p>Email: support@gaymer.co.nz</p>
+      </div>
+      
+      <div class="f4">
+        <p>Follow us</p>
+        <p><i class="fab fa-facebook"></i><i class="fab fa-linkedin"></i><i class="fab fa-twitter-square"></i></p> 
+      </div>
+  </footer>
+    
+    
+    
+    
+<script>
+    $(document).ready(function(){
+        $('.menu').on('click',function(){
+            $('.hidden').slideToggle('slow');
+           
+        });
+    });
+    
+    
+</script>    
+    
+    
+</body>
+</html>
